@@ -1,26 +1,78 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MAPD124_W2017_Lesson11" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7A-Nl-LBq">
+                                <rect key="frame" x="16" y="28" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="taps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4t-YT-QYy">
+                                <rect key="frame" x="16" y="57" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="touches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyA-lY-ZEz">
+                                <rect key="frame" x="16" y="86" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="force" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJB-Ub-GJa">
+                                <rect key="frame" x="16" y="115" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N7A-Nl-LBq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1VZ-IA-GON"/>
+                            <constraint firstItem="N7A-Nl-LBq" firstAttribute="leading" secondItem="A4t-YT-QYy" secondAttribute="leading" id="3Gj-8Y-dpe"/>
+                            <constraint firstItem="N7A-Nl-LBq" firstAttribute="trailing" secondItem="A4t-YT-QYy" secondAttribute="trailing" id="4Gn-sz-gwP"/>
+                            <constraint firstItem="OyA-lY-ZEz" firstAttribute="trailing" secondItem="xJB-Ub-GJa" secondAttribute="trailing" id="CTp-mr-O93"/>
+                            <constraint firstItem="OyA-lY-ZEz" firstAttribute="leading" secondItem="xJB-Ub-GJa" secondAttribute="leading" id="DTi-0A-c9L"/>
+                            <constraint firstItem="N7A-Nl-LBq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="PM6-vv-IfU"/>
+                            <constraint firstItem="A4t-YT-QYy" firstAttribute="top" secondItem="N7A-Nl-LBq" secondAttribute="bottom" constant="8" symbolic="YES" id="PSd-4C-pic"/>
+                            <constraint firstItem="OyA-lY-ZEz" firstAttribute="top" secondItem="A4t-YT-QYy" secondAttribute="bottom" constant="8" symbolic="YES" id="ctx-Ms-7XQ"/>
+                            <constraint firstItem="A4t-YT-QYy" firstAttribute="leading" secondItem="OyA-lY-ZEz" secondAttribute="leading" id="gwe-2F-vK7"/>
+                            <constraint firstItem="N7A-Nl-LBq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="s1V-wv-TJX"/>
+                            <constraint firstItem="A4t-YT-QYy" firstAttribute="trailing" secondItem="OyA-lY-ZEz" secondAttribute="trailing" id="vHO-NM-E1Z"/>
+                            <constraint firstItem="xJB-Ub-GJa" firstAttribute="top" secondItem="OyA-lY-ZEz" secondAttribute="bottom" constant="8" symbolic="YES" id="ygg-QV-xFb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="forceLabel" destination="xJB-Ub-GJa" id="sUS-vg-fro"/>
+                        <outlet property="messageLabel" destination="N7A-Nl-LBq" id="qbD-1H-ot8"/>
+                        <outlet property="tapsLabel" destination="A4t-YT-QYy" id="s6l-fD-0fI"/>
+                        <outlet property="touchesLabel" destination="OyA-lY-ZEz" id="awa-tL-mGP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="118.29085457271366"/>
         </scene>
     </scenes>
 </document>
